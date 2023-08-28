@@ -7,6 +7,7 @@ use App\Models\Katalog;
 use App\Models\Test;
 use App\Models\Client;
 use App\Models\Brand;
+use App\Models\Slider;
 
 class TestController extends Controller
 {
@@ -16,6 +17,7 @@ class TestController extends Controller
         $tests = Test::where('id', '=', 2)->first();
         $clients = Client::all();
         $brands = Brand::all();
-        return view('test', compact('katalogs', 'tests', 'clients', 'brands'));
+        $sliders = Slider::all();
+        return view('test', compact('katalogs', 'tests', 'clients', 'brands', 'sliders'));
     }
 }

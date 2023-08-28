@@ -11,6 +11,14 @@
     <br>
     <br>
     
+    <p>TABEL SLIDER</p>
+    @foreach ($sliders as $slider)
+        <img src="{{ asset('sliders/'.$slider->image) }}" alt="" style="height: 50px">
+    @endforeach
+
+    <br>
+    <br>
+    
     <P>TABEL TEST</P>
     <img src="{{ asset('tests/'.$tests->image) }}" alt="" style="height: 50px;">
 

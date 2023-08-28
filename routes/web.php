@@ -7,6 +7,7 @@ use App\Http\Controllers\DummyController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\SidebarController;
+use App\Http\Controllers\SliderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Route::resource('katalog', KatalogController::class);
 Route::resource('test', DummyController::class);
 Route::resource('client', ClientController::class);
 Route::resource('brand', BrandController::class);
+Route::resource('slider', SliderController::class);
 
 Route::get('/', [TestController::class, 'index']);
 Route::get('welcome', [SidebarController::class, 'index']);
