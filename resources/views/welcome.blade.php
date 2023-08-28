@@ -24,22 +24,22 @@
 	  		<h1><a href="index.html" class="logo">ADMIN - DIM</a></h1>
         <ul class="list-unstyled components mb-5">
           <li>
-            <a href="/"><span class="fa fa-home mr-3"></span> DASHBOARD</a>
+            <a href="/"><span class="fa fa-home mr-3"></span> D A S H B O A R D</a>
           </li>
           <li>
-              <a href="katalog"><span class="fa fa-user mr-3"></span> KATALOG</a>
+              <a href="test"><span class="fa fa-file-image-o mr-3"></span> L O G O</a>
           </li>
           <li>
-            <a href="client"><span class="fa fa-sticky-note mr-3"></span> CLIENT</a>
+            <a href="slider"><span class="fa fa-picture-o mr-3"></span> S L I D E R</a>
           </li>
           <li>
-            <a href="brand"><span class="fa fa-sticky-note mr-3"></span> BRAND</a>
+            <a href="katalog"><span class="fa fa-cart-plus mr-3"></span> K A T A L O G</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Settings</a>
+            <a href="client"><span class="fa fa-handshake-o mr-3"></span> C L I E N T</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Information</a>
+            <a href="brand"><span class="fa fa-laptop mr-3"></span> B R A N D</a>
           </li>
         </ul>
 

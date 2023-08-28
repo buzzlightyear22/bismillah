@@ -8,7 +8,6 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('test.create') }}" class="btn btn-md btn-success mb-3"><i class="fa fa-plus-square"></i></a>
                             <table class="table table-bordered">
                                 <thead>
                                 <tr>
@@ -25,9 +24,6 @@
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('test.destroy', $test->id) }}" method="POST">
                                                 <a href="{{ route('test.edit', $test->id) }}" class="btn btn-sm btn-primary"><i class="fa fa-gear"></i></a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger"><a class="fa fa-trash-o"></a></button>
                                             </form>
                                         </td>
                                     </tr>
