@@ -30,10 +30,10 @@
               <a href="katalog"><span class="fa fa-user mr-3"></span> KATALOG</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Friends</a>
+            <a href="client"><span class="fa fa-sticky-note mr-3"></span> CLIENT</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Subcription</a>
+            <a href="brand"><span class="fa fa-sticky-note mr-3"></span> BRAND</a>
           </li>
           <li>
             <a href="#"><span class="fa fa-paper-plane mr-3"></span> Settings</a>

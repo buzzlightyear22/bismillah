@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KatalogController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\DummyController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\BrandController;
+use App\Http\Controllers\SidebarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +25,8 @@ Route::get('/error', function () {
 
 Route::resource('katalog', KatalogController::class);
 Route::resource('test', DummyController::class);
+Route::resource('client', ClientController::class);
+Route::resource('brand', BrandController::class);
 
 Route::get('/', [TestController::class, 'index']);
+Route::get('welcome', [SidebarController::class, 'index']);

@@ -57,23 +57,8 @@ class DummyController extends Controller
 
     public function update(Request $request, Test $test)
     {
-        $this->validate($request, [
-            'title'     => 'required',
-            'content'   => 'required'
-        ]);
-
         //get data Blog by ID
         $test = Test::findOrFail($test->id);
-
-        if($request->file('image') == "") {
-
-            $test->update([
-                'title'     => $request->title,
-                'content'   => $request->content
-            ]);
-
-        } else {
-
             //hapus old image
             if( File::exists(public_path('tests/' . $test->image)) ) {
                 File::delete(public_path('tests/' . $test->image));
@@ -87,8 +72,6 @@ class DummyController extends Controller
             $test->update([
                 'image'     => $image_name,
             ]);
-
-        }
 
         if($test){
             //redirect dengan pesan sukses
