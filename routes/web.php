@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KatalogController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\DummyController;
@@ -19,16 +20,17 @@ use App\Http\Controllers\SliderController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
+Route::get('/', [HomeController::class, 'index'])->name('dashboard');
 
-Route::get('/error', function () {
-    return view('katalog.index');
+Route::middleware('auth')->group(function(){
+    Route::resource('katalog', KatalogController::class);
+    Route::resource('test', DummyController::class);
+    Route::resource('client', ClientController::class);
+    Route::resource('brand', BrandController::class);
+    Route::resource('slider', SliderController::class);
+    Route::get('welcome', [SidebarController::class, 'index']);
 });
 
-Route::resource('katalog', KatalogController::class);
-Route::resource('test', DummyController::class);
-Route::resource('client', ClientController::class);
-Route::resource('brand', BrandController::class);
-Route::resource('slider', SliderController::class);
 
-Route::get('/', [TestController::class, 'index']);
-Route::get('welcome', [SidebarController::class, 'index']);
+
