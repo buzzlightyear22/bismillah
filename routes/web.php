@@ -9,6 +9,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\SidebarController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +21,10 @@ use App\Http\Controllers\SliderController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::routes();
-Route::get('/', [HomeController::class, 'index'])->name('dashboard');
+Route::get('home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [DashboardController::class, 'index']);
 
 Route::middleware('auth')->group(function(){
     Route::resource('katalog', KatalogController::class);

@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -693,7 +694,7 @@ pre {
   margin-left: 83.33333%; }
 
 .offset-11 {
-  margin-left: 91.66667%; }
+  margin-left: 91.66667%; }  
 
 @media (min-width: 576px) {
   .col-sm {
@@ -6468,6 +6469,30 @@ button.bg-dark:focus {
   clip: auto;
   white-space: normal; }
 
+.exit-menu {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: inline-block;
+  background-color: #212121;
+  padding: 10px 22px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.exit-menu-content {
+  display: none;
+  background-color: transparent;
+  box-shadow: 8px rgba(0, 0, 0, 0.05);
+  padding: 12px;
+}
+
+.exit-menu:hover .exit-menu-content {
+  display: block;
+}
+
 .shadow-sm {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
@@ -8073,6 +8098,11 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+}  
+
 @media print {
   *,
   *::before,
@@ -8330,3 +8360,5 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #4897fc; }
+
+  
