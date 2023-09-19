@@ -1,6 +1,6 @@
 @extends('welcome')
 
-@section('judul halaman', 'TAMBAHKAN KATALOG')
+@section('judul halaman', 'TAMBAHKAN SLIDER')
 
 @section('konten')
             <div class="container mt-5 mb-5">

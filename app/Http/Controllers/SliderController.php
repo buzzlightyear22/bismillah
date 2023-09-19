@@ -15,7 +15,7 @@ class SliderController extends Controller
      */
     public function index()
     {
-        $sliders = Slider::latest()->paginate(10);
+        $sliders = Slider::latest()->paginate(20);
         return view('slider.index', compact('sliders'));
     }
     

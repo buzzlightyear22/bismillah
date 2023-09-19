@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="../favicon.ico">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/default.css') }}"/>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/component.css') }}"/>
-    <link rel="icon" href="{{ asset('tests/'.$tests->image) }}">
+    <link rel="icon" href="{{ asset('tests/'.$tests) }}">
     <link rel="stylesheet" href="{{ asset('css/navbar_style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
 <body>
 
 <header><nav class="navbar navbar-expand-custom navbar-mainbg" id="navbar">
-        <section id="beranda"><a class="navbar-brand navbar-logo" href="home"><img src="{{ asset('tests/'.$tests->image) }}" alt="logo" style="height: 45px;"></a></section>
+        <section id="beranda"><a class="navbar-brand navbar-logo" href="home"><img src="{{ asset('tests/'.$tests) }}" alt="logo" style="height: 45px;"></a></section>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>
@@ -61,22 +61,22 @@
             <div id="slides-main" class="slides">
                 <div class="slide" data-index="0">
                     <div class="abs-mask">
-                        <div class="slide-image"><img src="{{ asset('sliders/'.$slider1->image) }}" alt="error"></div>
+                        <div class="slide-image"><img src="{{ asset('sliders/'.$slider1) }}" alt="error"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="1">
                     <div class="abs-mask">
-                    <div class="slide-image"><img src="{{ asset('sliders/'.$slider2->image) }}" alt="error"></div>
+                    <div class="slide-image"><img src="{{ asset('sliders/'.$slider2) }}" alt="error"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="2">
                     <div class="abs-mask">
-                    <div class="slide-image"><img src="{{ asset('sliders/'.$slider3->image) }}" alt="error"></div>
+                    <div class="slide-image"><img src="{{ asset('sliders/'.$slider3) }}" alt="error"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="3">
                     <div class="abs-mask">
-                    <div class="slide-image"><img src="{{ asset('sliders/'.$slider4->image) }}" alt="error"></div>
+                    <div class="slide-image"><img src="{{ asset('sliders/'.$slider4) }}" alt="error"></div>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
 <div class= "aboutus"><h3 style="font-family: Poppins, sans-serif; font-weight:bold;" id="profile">Dinamika Indo Media</h3><p style="line-height:1.2em;font-size:12pt">PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
 
 <div class="col1">
-<img src="{{ asset('sliders/'.$ecatalogue->image) }}" alt="">
+<img src="{{ asset('sliders/'.$ecatalogue) }}" alt="">
 <div class="col2">
     <h3>Anda mencari mitra yang dapat diandalkan dalam mengembangkan bisnis Anda?</h3>
     <p>PT. Dinamika Indo Media telah mengukir jejak sukses dalam dunia teknologi informasi selama lebih dari 10 tahun. Dengan pengalaman yang luas dan komitmen yang kuat terhadap pelayanan berkualitas, kami telah menjadi mitra kepercayaan bagi berbagai perusahaan dan lembaga terkemuka.</p>
@@ -172,13 +172,13 @@
     <li>Melayani Pembangunan Gudang</li>
 </ul>
 <div class="col4">
-<img src="{{ asset('sliders/'.$kontruksi->image) }}" alt="">
+<img src="{{ asset('sliders/'.$kontruksi) }}" alt="">
 </div>
 </div>
 
 <section class="con-retail">
 <div class="col1-retail">
-        <img src="{{ asset('sliders/'.$retail->image) }}" alt="">
+        <img src="{{ asset('sliders/'.$retail) }}" alt="">
         <div class=col2-retail>
             <h2>Retail</h2>
             <ul>
@@ -198,7 +198,7 @@
         @foreach ($katalogs as $katalog)
         <li>
             <figure>
-                <img src="{{ asset('katalogs/'.$katalog->image) }}" alt="img04">
+                <img src="{{ asset('katalogs/'.$katalog) }}" alt="img04">
                 <figcaption>
                     <h3>{{ $katalog->title }}</h3>
                     <span>{!! $katalog->content !!}</span>
@@ -218,7 +218,7 @@
 			<!-- Img Code -->
 			@foreach ($clients as $client)
                 <div class="slide">
-                    <img src="{{ asset('clients/'.$client->image) }}" alt="error">
+                    <img src="{{ asset('clients/'.$client) }}" alt="error">
                 </div>
             @endforeach
 			<!-- Img Code End -->
@@ -236,7 +236,7 @@
     </div>
     <div class="row3">
       <div class="col">
-        <img src="{{ asset('tests/'.$tests->image) }}" class="logo">
+        <img src="{{ asset('tests/'.$tests) }}" class="logo">
         <section id="hubungi"><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011
           di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang
           untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja

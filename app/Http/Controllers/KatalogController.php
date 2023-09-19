@@ -15,7 +15,7 @@ class KatalogController extends Controller
      */
     public function index()
     {
-        $katalogs = Katalog::latest()->paginate(10);
+        $katalogs = Katalog::latest()->paginate(20);
         return view('katalog.index', compact('katalogs'));
 
         $tests = Test::where('id', '=', 2)->first();

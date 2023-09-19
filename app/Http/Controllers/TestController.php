@@ -14,10 +14,22 @@ class TestController extends Controller
     public function index()
     {
         $katalogs = Katalog::all();
-        $tests = Test::where('id', '=', 2)->first();
+        $tests = Test::where('id', '=', 1)->first();
+        if($tests) {
+            $tests = $tests->image;
+        } else {
+            $tests = '';
+        }
         $clients = Client::all();
         $brands = Brand::all();
         $sliders = Slider::all();
-        return view('test', compact('katalogs', 'tests', 'clients', 'brands', 'sliders'));
+        $data = ([
+            'tests' => $tests,
+            'katalogs' => $katalogs,
+            'clients' => $clients,
+            'brands' => $brands,
+            'sliders' => $sliders,
+        ]);
+        return view('test', $data);
     }
 }
