@@ -69,6 +69,7 @@ body {
   height: 100vh;
   display: flex;
   background: #030303;
+  margin-top: 60px;
 }
 
 /* line 75, D:/WEB/Projects/Slider/assets/scss/style.scss */
@@ -104,6 +105,7 @@ body {
   position: relative;
   top: 1.25rem;
   width: 100%;
+  color: transparent;
 }
 
 /* line 112, D:/WEB/Projects/Slider/assets/scss/style.scss */
@@ -208,7 +210,7 @@ z-index: 500;
 
 /* line 205, D:/WEB/Projects/Slider/assets/scss/style.scss */
 #slider-nav .current {
-color: #fff;
+color: transparent;
 }
 
 /* line 209, D:/WEB/Projects/Slider/assets/scss/style.scss */
@@ -241,7 +243,7 @@ right: 0;
 
 /* line 235, D:/WEB/Projects/Slider/assets/scss/style.scss */
 #slider-nav .total {
-color: #000000;
+color: transparent;
 }
 
 /* line 239, D:/WEB/Projects/Slider/assets/scss/style.scss */
@@ -676,33 +678,7 @@ background: url("https://i.ibb.co/wQZVxxk/wave.png");
 background-size: 1000px 100px;
 }
 
-.wave#wave1 {
-z-index: 1000;
-opacity: 1;
-bottom: 0;
-animation: animateWaves 4s linear infinite;
-}
 
-.wave#wave2 {
-z-index: 999;
-opacity: 0.5;
-bottom: 10px;
-animation: animate 4s linear infinite !important;
-}
-
-.wave#wave3 {
-z-index: 1000;
-opacity: 0.2;
-bottom: 15px;
-animation: animateWaves 3s linear infinite;
-}
-
-.wave#wave4 {
-z-index: 999;
-opacity: 0.7;
-bottom: 20px;
-animation: animate 3s linear infinite;
-}
 
 @keyframes animateWaves {
 0% {
@@ -968,20 +944,20 @@ h5, .h5 {
 
 .col1 {
   height: 70vh;
-  width: 100%;
+  width: fit-content;
   display:flex;
   margin-top: 60px;
   margin-left: 50px;
 }
 
 .col2{
-  width: 100%;
+  display: grid;
+  width: fit-content;
   margin-left: -100px;
   background-color:#f8f8f9;
   padding: 40px;
   background-color: #3586ff;
   border-top-right-radius: 125px;
-  margin-right: 50px;
   border-bottom-left-radius: 125px;
 
 }
@@ -994,13 +970,8 @@ h5, .h5 {
   font-weight: bold;
 }
 
-.col2 p{
-  color: #fff;
-  line-height: 1.5em;
-  font-family: "Montserrat", sans-serif;
-  text-align: left;
-  font-size:12pt  ;
-  margin-top: 30px;
+.col2 button {
+  box-sizing: content-box;
 }
 
 .button {
@@ -1048,7 +1019,7 @@ h5, .h5 {
   width: 100%;
   height:40vh;
   display: flex;
-  background-color: #f8f8f9;
+  background-color: #e0e0eb;
 }
 
 .col3 h2{
@@ -1104,6 +1075,7 @@ h5, .h5 {
 
 .col1-retail{
   display: flex;
+  background-color: #e0e0eb;
 }
 
 .col1-retail img{
@@ -1141,4 +1113,56 @@ h5, .h5 {
 
 .col2-retail li{
   list-style: disc;
+}
+
+.container3 {
+  text-align: center;
+}
+
+.button-54 {
+  height: 70px;
+  width: 70px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 1000;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.footer p{
+  color: white;
+}
+
+.footer {
+  color: white;
+}
+
+.footer a:hover {
+  color: black;
 }

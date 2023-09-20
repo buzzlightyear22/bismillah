@@ -20,41 +20,42 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-
-<header><nav class="navbar navbar-expand-custom navbar-mainbg" id="navbar">
-        <section id="beranda"><a class="navbar-brand navbar-logo" href="home"><img src="{{ asset('tests/'.$tests) }}" alt="logo" style="height: 45px;"></a></section>
-        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                <li class="nav-item">
-                    <a class="nav-link" href="#beranda"><i class="fas fa-tachometer-alt"></i><strong>Beranda</strong></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#profile"><i class="far fa-address-book"></i><strong>Profile</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#produk"><i class="far fa-clone"></i><strong>Product</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#customer"><i class="far fa-calendar-alt"></i><strong>Customer</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#hubungi"><i class="far fa-chart-bar"></i><strong>Hubungi</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i><strong>Mitra</strong></a>
-                </li>
-            </ul>
-        </div>
-    </nav></header>
+    <header id="header">
+        <nav class="navbar navbar-expand-custom" id="navbar">
+            <a class="navbar-brand navbar-logo" href="home"><img src="{{ asset('tests/'.$tests) }}" alt="logo" style="height: 45px;"></a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#beranda"><i class="fa fa-home"></i><strong>Beranda</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile"><i class="fa fa-university"></i><strong>Profile</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produk"><i class="fa fa-shopping-basket"></i><strong>Product</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#customer"><i class="fa fa-handshake"></i><strong>Customer</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hubungi"><i class="fa fa-phone"></i><strong>Hubungi</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Image Slider -->
     <div id="hero-slider">
         <div id="logo" class="mask">
-            <span class="logo-text masked">PT. Dinamika Indo Media</span>
+            <section id="beranda"><span class="logo-text masked">PT. Dinamika Indo Media</span></section>
         </div>
 
         <div id="slideshow">
@@ -81,10 +82,10 @@
                 </div>
             </div>
             <div id="slides-aux" class="slides mask">
-                <h2 class="slide-title slide" data-index="0"><a href="#">#MOCO</a></h2>
-                <h2 class="slide-title slide" data-index="1"><a href="#">Industrial Works</a></h2>
-                <h2 class="slide-title slide" data-index="2"><a href="#">Future Lights</a></h2>
-                <h2 class="slide-title slide" data-index="3"><a href="#">The Colossal</a></h2>
+                <h2 class="slide-title slide" data-index="0"><a href="#"></a></h2>
+                <h2 class="slide-title slide" data-index="1"><a href="#"></a></h2>
+                <h2 class="slide-title slide" data-index="2"><a href="#"></a></h2>
+                <h2 class="slide-title slide" data-index="3"><a href="#"></a></h2>
             </div>
         </div>
         <div id="info">
@@ -96,20 +97,18 @@
         </div>
         <nav id="slider-nav">
             <span class="current">01</span>
-            <span class="sep"></span>
             <span class="total">04</span>
         </nav>
     </div>
 
     <!-- About Company -->
 
-<div class= "aboutus"><h3 style="font-family: Poppins, sans-serif; font-weight:bold;" id="profile">Dinamika Indo Media</h3><p style="line-height:1.2em;font-size:12pt">PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
+<div class= "aboutus"><h3 style="font-family: Poppins, sans-serif; font-weight:bold;" id="profile">Dinamika Indo Media</h3><p style="line-height:1.2em;font-size:12pt"><span style="font-weight: bold">PT. DINAMIKA INDO MEDIA</span> berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
 
 <div class="col1">
 <img src="{{ asset('sliders/'.$ecatalogue) }}" alt="">
 <div class="col2">
-    <h3>Anda mencari mitra yang dapat diandalkan dalam mengembangkan bisnis Anda?</h3>
-    <p>PT. Dinamika Indo Media telah mengukir jejak sukses dalam dunia teknologi informasi selama lebih dari 10 tahun. Dengan pengalaman yang luas dan komitmen yang kuat terhadap pelayanan berkualitas, kami telah menjadi mitra kepercayaan bagi berbagai perusahaan dan lembaga terkemuka.</p>
+    <h3 style="color: white">Anda mencari mitra yang dapat diandalkan dalam mengembangkan bisnis Anda?</h3>
     <a href="https://e-katalog.lkpp.go.id/info/penyedia/252896"><button class="button" style="vertical-align:middle"><span>E-Catalogue</span></button></a>
 </div>
 </div>
@@ -122,7 +121,7 @@
             <h2 style="font-family: Poppins, sans-serif;">
             Unit <span>Bisnis</span>
             </h2>
-            <p>
+            <p style="text-align: center">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
             </p>
             </div>
@@ -162,7 +161,28 @@
             </div>
         </div>
     </div>
+
+    <div class= "brand" style="font-weight:bold; padding: 30px;"><h3 style="font-family: Poppins, sans-serif;">Support <span style="color:#0a97b0;">Brand</span></h3><p></p></div>
+    <!-- slider brand -->
+    <section id="brand"></section>
+    <div class="wrapper">
+	<div class="slider">
+	    <div class="slide-track">
+
+                <!-- Img Code -->
+                @foreach ($brands as $brand)
+                    <div class="slide">
+                        <img src="{{ asset('brands/'.$brand->image) }}" alt="error">
+                    </div>
+                @endforeach
+                <!-- Img Code End -->
+
+            </div>
+        </div>
+    </div>
 </section>
+
+
 
 <div class="col3">
 <h2>Penyedia Jasa</h2>
@@ -198,7 +218,7 @@
         @foreach ($katalogs as $katalog)
         <li>
             <figure>
-                <img src="{{ asset('katalogs/'.$katalog) }}" alt="img04">
+                <img src="{{ asset('katalogs/'.$katalog->image) }}" alt="img04">
                 <figcaption>
                     <h3>{{ $katalog->title }}</h3>
                     <span>{!! $katalog->content !!}</span>
@@ -215,17 +235,19 @@
 	<div class="slider">
 	    <div class="slide-track">
 
-			<!-- Img Code -->
-			@foreach ($clients as $client)
-                <div class="slide">
-                    <img src="{{ asset('clients/'.$client) }}" alt="error">
-                </div>
-            @endforeach
-			<!-- Img Code End -->
+                <!-- Img Code -->
+                @foreach ($clients as $client)
+                    <div class="slide">
+                        <img src="{{ asset('clients/'.$client->image) }}" alt="error">
+                    </div>
+                @endforeach
+                <!-- Img Code End -->
 
-		</div>
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+
+    
 
 <footer class="footer">
     <div class="waves">
@@ -237,7 +259,7 @@
     <div class="row3">
       <div class="col">
         <img src="{{ asset('tests/'.$tests) }}" class="logo">
-        <section id="hubungi"><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011
+        <section id="hubungi"><p><span style="font-weight: bold">PT. DINAMIKA INDO MEDIA</span> berdiri pada hari Kamis tanggal 10 Februari 2011
           di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang
           untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja
           pemerintahan yang bertempat di Kota Surabaya</p></section>
@@ -264,7 +286,7 @@
         <h3>Email</h3>
         <form>
           <i class="far fa-envelope"></i>
-          <input type="email" placeholder="Enter your email id" required>
+          <input type="email" placeholder="Enter your email id" required style="place-content: white;">
           <button type="Submit"><i class="fas fa-arrow3-right"></i></button>
         </form>
       </div>
@@ -272,6 +294,7 @@
     </ul>
     <p>&copy;2023 Mahasiswa It Telkom Surabaya | All Right Reserved</p>
   </footer>
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -279,6 +302,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     <script src="{{ asset('js/main2.js') }}"></script>
     <script src="{{ asset('js/toucheffects.js') }}"></script>
-    <script src="{{ asset('js/modernizr.custom.js') }}"></script>
 </body>
 </html>

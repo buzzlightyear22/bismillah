@@ -13,7 +13,7 @@ class DashboardController extends Controller
 {
     public function index(){
         $katalogs = Katalog::all();
-        $tests = Test::where('id', '=', 1)->first();
+        $tests = Test::where('id', '=', 2)->first();
         if($tests) {
             $tests = $tests->image;
         } else {

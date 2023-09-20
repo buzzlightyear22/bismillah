@@ -12,8 +12,8 @@
     <br>
     
     <p>TABEL SLIDER</p>
-    @foreach ($sliders as $slider)
-        <img src="{{ asset('sliders/'.$slider) }}" alt="" style="height: 50px">
+    @foreach ($sliders as $sliders)
+        <img src="{{ asset('sliders/'.$sliders) }}" alt="" style="height: 50px">
     @endforeach
 
     <br>
@@ -26,15 +26,15 @@
     <br>
 
     <p>TABEL CLIENT</p>
-    @foreach ($clients as $client)
-        <img src="{{ asset('clients/'.$client) }}" alt="" style="height: 100px">
+    @foreach ($clients as $clients)
+        <img src="{{ asset('clients/'.$clients) }}" alt="" style="height: 100px">
     @endforeach
     
     <br>
     <br>
     
     <p>TABEL BRAND</p>
-    @foreach ($brands as $brand)
-        <img src="{{ asset('brands/'.$brand) }}" alt="" style="height: 50px">
+    @foreach ($brands as $brands)
+        <img src="{{ asset('brands/'.$brands) }}" alt="" style="height: 50px">
     @endforeach
 @endsection
